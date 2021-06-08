@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration xmlns="http://logging.apache.org/log4j/2.0/config">
+    <Properties>
+        <Property name="basePatch">C:\Users\micha\IdeaProjects\SeleniumWDTutorial\logs</Property>
+    </Properties>
+    <Appenders>
+        <Console name="ConsoleLog4j2" target="">
+            <PatternLayout pattern="%d{HH.mm.ss.SSS} %-5level %c{2} -%msg%n">
+
+            </PatternLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="trace">
+            <AppenderRef ref="ConsoleLog4j2">
+
+            </AppenderRef>
+        </Root>
+    </Loggers>
+</Configuration>
